@@ -1,11 +1,12 @@
 const Web3 = require('web3');
 const Provider = require('@truffle/hdwallet-provider');
 const contract = require('./contract');
+require('dotenv').config();
 
 const contractABI = contract.contractABI;
 const contractAddress = '0x9BdB5fcc80A49640c7872ac089Cc0e00A98451B6';
-const privateKey = ''; //Add your private key
-const myAddress = ''; // Add your wallet address
+const privateKey = process.env.PRIVATE_KEY;
+const myAddress = process.env.ADDRESS;
 const wmaticTokenAddress = '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270';
 
 const depositMatic = async () => {

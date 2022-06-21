@@ -9,8 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@maticnetwork/maticjs": "^3.4.0-beta.0",
-    "@maticnetwork/maticjs-web3": "^1.0.1",
-    "@truffle/hdwallet-provider": "^2.0.9"
+    "@truffle/hdwallet-provider": "^2.0.9",
+    "dotenv": "^16.0.1"
   }
 }
