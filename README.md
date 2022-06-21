@@ -8,9 +8,13 @@ Web3.js script to deposit MATIC on AAVE
    ```
    npm install
    ```
-4. Then run 
+3. Then build the typescript files by running 
    ```
-   node deposit.js
+   npm build
+   ```
+4. Start the script by running
+   ```
+   npm start
    ```
 
 Currently the script does the deposit for 1 MATIC.
