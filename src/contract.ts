@@ -1,4 +1,4 @@
-const contractABI = [
+const contractABI: any = [
   {
     inputs: [
       { internalType: 'address', name: 'weth', type: 'address' },
@@ -147,4 +147,5 @@ const contractABI = [
   { stateMutability: 'payable', type: 'receive' },
 ];
 
-exports.contractABI = contractABI;
+// exports.contractABI = contractABI;
+export default contractABI;

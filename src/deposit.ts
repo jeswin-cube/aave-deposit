@@ -1,11 +1,10 @@
-const Web3 = require('web3');
-const Provider = require('@truffle/hdwallet-provider');
-const contract = require('./contract');
-require('dotenv').config();
+import Web3 from 'web3';
+import Provider from '@truffle/hdwallet-provider';
+import 'dotenv/config';
+import contractABI from './contract';
 
-const contractABI = contract.contractABI;
 const contractAddress = '0x9BdB5fcc80A49640c7872ac089Cc0e00A98451B6';
-const privateKey = process.env.PRIVATE_KEY;
+const privateKey: any = process.env.PRIVATE_KEY;
 const myAddress = process.env.ADDRESS;
 const wmaticTokenAddress = '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270';
 
